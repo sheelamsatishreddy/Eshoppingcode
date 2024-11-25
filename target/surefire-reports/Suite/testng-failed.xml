@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Framework.TestComponenets.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Submit Order Test(failed)" verbose="0">
+    <classes>
+      <class name="Framework.Eshopping.Potest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="createreports"/>
+          <include name="placeOrder"/>
+          <include name="verifyProductDisplayInOrderPage"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- Framework.Eshopping.Potest -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
+  <test thread-count="5" name="Error Validations Test(failed)" verbose="0">
+    <classes>
+      <class name="Framework.Eshopping.ErrorValidation">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="VerifyLoginErrorMessage"/>
+          <include name="createreports"/>
+          <include name="closeDriver"/>
+          <include name="verifyProductDisplayInCartPage"/>
+        </methods>
+      </class> <!-- Framework.Eshopping.ErrorValidation -->
+    </classes>
+  </test> <!-- Error Validations Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

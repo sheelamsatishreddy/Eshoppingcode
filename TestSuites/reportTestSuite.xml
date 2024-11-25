@@ -1,0 +1,16 @@
+<suite name = "Reports suite" parallel = "Tests">
+
+<listeners>
+	<listener class-name="Framework.TestComponenets.Listeners"/>
+</listeners>
+
+<test name = "Placingordertest">
+
+<classes>
+
+<class name = "Framework.Eshopping.Potest"/>
+</classes></test>
+
+<test name ="ErrorValidationtest"><classes><class name = "Framework.Eshopping.ErrorValidation"/></classes></test>
+
+</suite>
